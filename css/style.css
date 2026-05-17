@@ -59,8 +59,17 @@ nav ul a:hover {
   background: linear-gradient(135deg, #0f0f1a, #16213e);
 }
 
+.photo-profil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #00d4ff;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
 #hero h1 {
-  font-size: 52px;
+  font-size: 48px;
   margin-bottom: 20px;
 }
 
@@ -69,7 +78,7 @@ nav ul a:hover {
 }
 
 #hero h2 {
-  font-size: 24px;
+  font-size: 22px;
   color: #aaaaaa;
   margin-bottom: 15px;
 }
@@ -78,6 +87,13 @@ nav ul a:hover {
   font-size: 18px;
   color: #00d4ff;
   margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn {
@@ -94,6 +110,22 @@ nav ul a:hover {
   background-color: white;
 }
 
+.btn-cv {
+  background-color: transparent;
+  color: #00d4ff;
+  padding: 12px 35px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid #00d4ff;
+}
+
+.btn-cv:hover {
+  background-color: #00d4ff;
+  color: #0f0f1a;
+}
+
 /* SECTIONS */
 section {
   padding: 100px 50px;
@@ -104,6 +136,19 @@ section h2 {
   font-size: 40px;
   color: #00d4ff;
   margin-bottom: 50px;
+}
+
+/* PROFIL */
+#profil {
+  background-color: #16213e;
+}
+
+.profil-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #aaaaaa;
 }
 
 /* GRID */
@@ -120,7 +165,34 @@ section h2 {
   border: 2px solid #00d4ff;
   padding: 20px 30px;
   border-radius: 12px;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.card:hover {
+  background-color: #00d4ff;
+  color: #0f0f1a;
+}
+
+/* CERTIFICATIONS */
+#certifications {
+  background-color: #16213e;
+}
+
+.cert-card {
+  background-color: #0f0f1a;
+  border: 1px solid #00d4ff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 280px;
+}
+
+.cert-card h3 {
+  color: #00d4ff;
+  margin-bottom: 10px;
+}
+
+.cert-card p {
+  color: #aaaaaa;
 }
 
 /* PROJETS */
@@ -158,9 +230,38 @@ section h2 {
   background-color: white;
 }
 
+/* FORMATION */
+#formation {
+  background-color: #16213e;
+}
+
+.formation-card {
+  background-color: #0f0f1a;
+  border: 1px solid #00d4ff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+}
+
+.formation-card h3 {
+  color: #00d4ff;
+  margin-bottom: 10px;
+}
+
+.formation-card p {
+  color: #aaaaaa;
+  margin: 5px 0;
+}
+
+.ecole {
+  font-size: 14px;
+  color: #00d4ff !important;
+  margin-top: 10px !important;
+}
+
 /* CONTACT */
 #contact {
-  background-color: #16213e;
+  background-color: #0f0f1a;
 }
 
 #contact p {
