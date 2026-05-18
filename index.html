@@ -13,8 +13,10 @@
       <div class="logo">Chris-dev47</div>
       <ul>
         <li><a href="#hero">Accueil</a></li>
+        <li><a href="#profil">Profil</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#projets">Projets</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -24,7 +26,7 @@
       <img src="images/photo.jpg" alt="Kamguia Christel" class="photo-profil">
       <h1>Bonjour, je suis <span>Kamguia Christel Aimé</span></h1>
       <h2>Développeur Web · Réseaux · Cybersécurité 🚀</h2>
-      <p>Python • JavaScript • HTML/CSS • Git • Réseaux</p>
+      <p>Python • JavaScript • React • Node.js • Git</p>
       <div class="hero-buttons">
         <a href="#projets" class="btn">Voir mes projets</a>
         <a href="cv/chris-cv.pdf" download class="btn-cv">📄 Télécharger mon CV</a>
@@ -40,91 +42,211 @@
     <!-- COMPÉTENCES -->
     <section id="competences">
       <h2>Mes Compétences</h2>
-      <div class="grid">
-        <div class="card">🌐 HTML/CSS/JavaScript</div>
-        <div class="card">🐍 Python</div>
-        <div class="card">⚡ Node.js & Express</div>
-        <div class="card">🔒 Réseaux & Cybersécurité</div>
-        <div class="card">🐙 Git & GitHub</div>
-        <div class="card">🖥️ Linux</div>
-        <div class="card">🗄️ SQL & SQLite</div>
-        <div class="card">🔍 Wireshark & Ettercap</div>
-        <div class="card">🤖 Outils IA</div>
-        <div class="card">☁️ Cloud Computing</div>
-      </div>
-    </section>
+      <div class="competences-list">
 
-    <!-- CERTIFICATIONS -->
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <div class="grid">
-        <div class="cert-card">
-          <h3>☁️ Understanding Cloud Computing</h3>
-          <p>DataCamp</p>
+        <div class="competence-item">
+          <div class="competence-header">
+            <span>🐍 Python</span>
+            <span>75%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" data-width="75"></div>
+          </div>
         </div>
-        <div class="cert-card">
-          <h3>🔒 Sécurité des terminaux</h3>
-          <p>Cisco Networking Academy</p>
+
+        <div class="competence-item">
+          <div class="competence-header">
+            <span>🌐 HTML/CSS</span>
+            <span>85%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" data-width="85"></div>
+          </div>
         </div>
+
+        <div class="competence-item">
+          <div class="competence-header">
+            <span>⚡ JavaScript</span>
+            <span>70%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" data-width="70"></div>
+          </div>
+        </div>
+
+        <div class="competence-item">
+          <div class="competence-header">
+            <span>⚛️ React</span>
+            <span>60%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" data-width="60"></div>
+          </div>
+        </div>
+
+        <div class="competence-item">
+          <div class="competence-header">
+            <span>🐙 Git & GitHub</span>
+            <span>80%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" data-width="80"></div>
+          </div>
+        </div>
+
+        <div class="competence-item">
+          <div class="competence-header">
+            <span>🔒 Réseaux & Cybersécurité</span>
+            <span>70%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" data-width="70"></div>
+          </div>
+        </div>
+
+        <div class="competence-item">
+          <div class="competence-header">
+            <span>🖥️ Linux</span>
+            <span>65%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" data-width="65"></div>
+          </div>
+        </div>
+
+        <div class="competence-item">
+          <div class="competence-header">
+            <span>🗄️ SQL & SQLite</span>
+            <span>65%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" data-width="65"></div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- PROJETS -->
     <section id="projets">
       <h2>Mes Projets</h2>
-      <div class="grid">
+      <div class="projets-grid">
+
         <div class="projet-card">
-          <h3>🐍 Calculatrice Python</h3>
-          <p>Calculatrice avec fonctions et gestion d'erreurs</p>
-          <a href="https://github.com/chris-dev47/portfolio" class="btn-small">Voir le code</a>
+          <div class="projet-header">
+            <span class="projet-icon">🐍</span>
+            <span class="projet-tag python">Python</span>
+          </div>
+          <h3>Calculatrice Python</h3>
+          <p>Calculatrice avec fonctions et gestion d'erreurs division par zéro</p>
+          <a href="https://github.com/chris-dev47/portfolio" class="btn-small">🐙 Voir le code</a>
         </div>
+
         <div class="projet-card">
-          <h3>📋 Répertoire de contacts</h3>
-          <p>Application avec sauvegarde dans fichier</p>
-          <a href="https://github.com/chris-dev47/portfolio" class="btn-small">Voir le code</a>
+          <div class="projet-header">
+            <span class="projet-icon">📋</span>
+            <span class="projet-tag python">Python</span>
+          </div>
+          <h3>Répertoire de contacts</h3>
+          <p>Application complète avec sauvegarde fichier et suppression</p>
+          <a href="https://github.com/chris-dev47/portfolio" class="btn-small">🐙 Voir le code</a>
         </div>
+
         <div class="projet-card">
-          <h3>🌐 Calculatrice Web</h3>
-          <p>Calculatrice interactive HTML CSS JS</p>
-          <a href="https://github.com/chris-dev47/portfolio" class="btn-small">Voir le code</a>
+          <div class="projet-header">
+            <span class="projet-icon">⚖️</span>
+            <span class="projet-tag python">Python</span>
+          </div>
+          <h3>Calculateur BMI</h3>
+          <p>Calcul de l'indice de masse corporelle avec analyse du résultat</p>
+          <a href="https://github.com/chris-dev47/portfolio" class="btn-small">🐙 Voir le code</a>
         </div>
+
         <div class="projet-card">
-          <h3>🗄️ API REST</h3>
-          <p>API avec Express.js et base de données SQLite</p>
-          <a href="https://github.com/chris-dev47/portfolio" class="btn-small">Voir le code</a>
+          <div class="projet-header">
+            <span class="projet-icon">🌐</span>
+            <span class="projet-tag javascript">JavaScript</span>
+          </div>
+          <h3>Calculatrice Web</h3>
+          <p>Calculatrice interactive avec HTML CSS et JavaScript</p>
+          <a href="https://github.com/chris-dev47/portfolio" class="btn-small">🐙 Voir le code</a>
         </div>
+
         <div class="projet-card">
-          <h3>🔒 Analyse réseau</h3>
-          <p>Simulation et analyse de trafic avec Wireshark</p>
-          <a href="https://github.com/chris-dev47/portfolio" class="btn-small">Voir le code</a>
+          <div class="projet-header">
+            <span class="projet-icon">🗄️</span>
+            <span class="projet-tag nodejs">Node.js</span>
+          </div>
+          <h3>API REST</h3>
+          <p>API complète avec Express.js et base de données SQLite</p>
+          <a href="https://github.com/chris-dev47/portfolio" class="btn-small">🐙 Voir le code</a>
         </div>
+
+        <div class="projet-card">
+          <div class="projet-header">
+            <span class="projet-icon">📝</span>
+            <span class="projet-tag react">React</span>
+          </div>
+          <h3>Todo App Fullstack</h3>
+          <p>Application complète React + Express + SQLite avec recherche</p>
+          <a href="https://github.com/chris-dev47/react-projects" class="btn-small">🐙 Voir le code</a>
+        </div>
+
       </div>
     </section>
 
-    <!-- FORMATION -->
-    <section id="formation">
-      <h2>Formation</h2>
-      <div class="grid">
-        <div class="formation-card">
-          <h3>🎓 Licence Technologique CDRI</h3>
-          <p>Conception, Développement, Réseaux et Internet</p>
-          <p class="ecole">Université JFN-HUI · Institut Fosto Victor</p>
+    <!-- TÉMOIGNAGES -->
+    <section id="temoignages">
+      <h2>Témoignages</h2>
+      <div class="temoignages-grid">
+
+        <div class="temoignage-card">
+          <p>"Christel est quelqu'un de très sérieux et motivé. Il apprend très vite et livre toujours un travail propre."</p>
+          <div class="temoignage-auteur">
+            <div class="auteur-avatar">👨‍💼</div>
+            <div>
+              <h4>Prof. Kamdem</h4>
+              <span>Enseignant — Université JFN-HUI</span>
+            </div>
+          </div>
         </div>
-        <div class="formation-card">
-          <h3>🎓 BTS Génie Informatique</h3>
-          <p>Option Génie Logiciel</p>
-          <p class="ecole">Université JFN-HUI</p>
+
+        <div class="temoignage-card">
+          <p>"Un développeur créatif avec une grande capacité d'adaptation. Toujours prêt à apprendre de nouvelles technologies."</p>
+          <div class="temoignage-auteur">
+            <div class="auteur-avatar">👨‍💻</div>
+            <div>
+              <h4>Senior Dev</h4>
+              <span>Mentor technique</span>
+            </div>
+          </div>
         </div>
+
+        <div class="temoignage-card">
+          <p>"Christel a développé notre application de gestion en un temps record. Résultat propre et fonctionnel."</p>
+          <div class="temoignage-auteur">
+            <div class="auteur-avatar">👩‍💼</div>
+            <div>
+              <h4>Cliente</h4>
+              <span>Projet académique</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact">
       <h2>Me Contacter</h2>
-      <p>📧 kamguiachris@gmail.com</p>
-      <p>📱 +237 656 075 500</p>
-      <p>🐙 github.com/chris-dev47</p>
-      <p>📍 Douala, Cameroun</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>📧 kamguiachris@gmail.com</p>
+          <p>📱 +237 656 075 500</p>
+          <p>🐙 github.com/chris-dev47</p>
+          <p>📍 Douala, Cameroun</p>
+        </div>
+      </div>
     </section>
 
     <script src="js/main.js"></script>

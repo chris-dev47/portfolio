@@ -1,26 +1,37 @@
-// Animation au scroll
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible')
+    }
+  })
+}, { threshold: 0.1 })
+
+document.querySelectorAll('section').forEach(section => {
+  observer.observe(section)
+})
+
+// Progress bars animation
+const animateProgressBars = () => {
+  document.querySelectorAll('.progress-bar').forEach(bar => {
+    const width = bar.getAttribute('data-width')
+    bar.style.width = width + '%'
+  })
+}
+
+// Navbar scroll effect
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('nav')
   if (window.scrollY > 50) {
     nav.style.backgroundColor = '#16213e'
+    nav.style.boxShadow = '0 2px 20px rgba(0, 212, 255, 0.2)'
   } else {
     nav.style.backgroundColor = '#0f0f1a'
+    nav.style.boxShadow = 'none'
   }
 })
 
-// Animation des cartes au scroll
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = '1'
-      entry.target.style.transform = 'translateY(0)'
-    }
-  })
-})
-
-document.querySelectorAll('.card, .projet-card').forEach(card => {
-  card.style.opacity = '0'
-  card.style.transform = 'translateY(30px)'
-  card.style.transition = 'all 0.5s ease'
-  observer.observe(card)
+// Animate on load
+window.addEventListener('load', () => {
+  setTimeout(animateProgressBars, 500)
 })
